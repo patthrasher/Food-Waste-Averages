@@ -16,7 +16,7 @@ def add_zeros(int_row) : # add zeros if end of spreadsheet was blank
         while j <= zeros :
             int_row.append(0)
             j = j + 1
-                                #next make output look pretty, then add all items
+
 def add_days(item, row) :
     item['mon'] += row[4]
     item['tue'] += row[9]
@@ -64,7 +64,7 @@ client = gspread.authorize(creds)
 
 spreadsheet_name = input('Spreadsheet name: ')
 if spreadsheet_name == '':
-    spreadsheet_name = 'South 1st Waste Log'
+    spreadsheet_name = 'Test Data South 1st Waste Log'
 how_many_sheets = input('How many weeks? ')
 spreadsheet_name = spreadsheet_name.split(',')
 
@@ -83,10 +83,10 @@ print('=============')
 i = 1
 while i <= how_many_sheets :
     try:
-        current_sheet = spreadsheet.get_worksheet(i + 2) # Add 2 to skip template and non-conforming layout, change for new spreadsheet
+        current_sheet = spreadsheet.get_worksheet(i) # Added 2 to skip template and non-conforming layout, changed for new spreadsheet
     except:
         print('Not that many sheets in spreadsheet, enter lower number') # Maybe don't need this try/except
-        quit()
+        quit()                 # better way would be to standardize the number of weeks per spreadsheet then base try/except on that number
     if current_sheet == None : # works but not very efficient, runs calculations on all sheets before failing
         print('Not that many sheets in spreadsheet, enter lower number')
         quit()
@@ -101,7 +101,6 @@ while i <= how_many_sheets :
 
     # print(data)
     # print('sheet', i)
-
 
     # lists of rows as strings with blanks
     bean_row_str = current_sheet.row_values(3)
@@ -131,10 +130,22 @@ while i <= how_many_sheets :
 # print('migas', migas)
 # print('potato', potato)
 # print('vegan', vegan)
-#
-# print('=========================')
 
-print('=============')
+print('=========================')
+
+total = 0 # Calculates total tacos wasted
+for key, value in bean.items() :
+    total = total + value
+for key, value in migas.items() :
+    total = total + value
+for key, value in potato.items() :
+    total = total + value
+for key, value in vegan.items() :
+    total = total + value
+
+print('Total taco waste:', total)
+
+print('=========================')
 print('Averages:')
 print('')
 
