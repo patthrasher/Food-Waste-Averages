@@ -1,14 +1,6 @@
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 
-def blanks_to_zeros(str_row, int_list) :
-    str_row.pop(0)
-    for each in str_row :
-        if each == '' :
-            each = 0
-        int_list.append(int(each)) # make separate function for converting to int?
-    add_zeros(int_list)
-
 def add_zeros(int_row) : # add zeros if end of spreadsheet was blank
     if len(int_row) < 35 :
         zeros = 35 - len(int_row)
@@ -16,6 +8,14 @@ def add_zeros(int_row) : # add zeros if end of spreadsheet was blank
         while j <= zeros :
             int_row.append(0)
             j = j + 1
+
+def blanks_to_zeros(str_row, int_list) :
+    str_row.pop(0)
+    for each in str_row :
+        if each == '' :
+            each = 0
+        int_list.append(int(each))
+    add_zeros(int_list)
 
 def add_days(item, row) :
     item['mon'] += row[4]
@@ -83,24 +83,21 @@ print('=========================')
 i = 1
 while i <= how_many_sheets :
     try:
-        current_sheet = spreadsheet.get_worksheet(i) # Added 2 to skip template and non-conforming layout, changed for new spreadsheet
+        current_sheet = spreadsheet.get_worksheet(i)
     except:
-        print('Not that many sheets in spreadsheet, enter lower number') # Maybe don't need this try/except
-        quit()                 # better way would be to standardize the number of weeks per spreadsheet then base try/except on that number
-    if current_sheet == None : # works but not very efficient, runs calculations on all sheets before failing
+        print('Not that many sheets in spreadsheet, enter lower number')
+        quit()
+    if current_sheet == None :
+    # works but not very efficient, runs calculations on all sheets before failing
+    # better way would be to standardize the number of weeks per spreadsheet then base try/except on that number
         print('Not that many sheets in spreadsheet, enter lower number')
         quit()
 
     data = current_sheet.get_all_values()
 
-    # print(current_sheet)
-
     strslice = str(current_sheet)
     slice = strslice[12:27]
     print('Week', i, ':', slice)
-
-    # print(data)
-    # print('sheet', i)
 
     # lists of rows as strings with blanks
     bean_row_str = current_sheet.row_values(3)
@@ -125,11 +122,6 @@ while i <= how_many_sheets :
     add_days(vegan, vegan_row)
 
     i = i + 1
-
-# print('bean', bean)
-# print('migas', migas)
-# print('potato', potato)
-# print('vegan', vegan)
 
 print('=========================')
 
@@ -161,8 +153,3 @@ print('')
 print('Vegan - ')
 days_average(vegan, vegan_av)
 print('')
-
-# print(bean_av)
-# print(migas_av)
-# print(potato_av)
-# print(vegan_av)
