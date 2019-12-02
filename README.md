@@ -2,7 +2,7 @@
   <p>A python application to help track food waste and dial in ordering at work. It uses the Google
   Sheets API and runs calculations to get averages for each day’s leftover tacos.</p>
 
-<p>![](moon-waste-gif.gif)</p>
+![](moon-waste-gif.gif)
 
 <p><b>Sheets For Reference</b></p>
   <p>The Google Spreadsheets used for testing:<br>
