@@ -79,7 +79,7 @@ except:
     print('Spreadsheet not found')
     quit()
 
-print('=============')
+print('=========================')
 i = 1
 while i <= how_many_sheets :
     try:
