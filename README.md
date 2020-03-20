@@ -4,7 +4,7 @@
   created with the raw data and calculations for the month. The application then resets the Google
   Spreadsheets for the next month with data cells cleared out.</p>
 
-<img src="sheet.png" alt="Image of spreadsheet filled out with data">
+![Image of spreadsheet fille out with data](/screenshots-gifs/sheet.png)
 
 <p><b>Sheets For Reference</b></p>
   <p>The Google Spreadsheets used for testing:<br>
