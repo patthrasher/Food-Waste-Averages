@@ -14,10 +14,15 @@
 
 ![Image of text file with calculations from spreadsheet](calcs.png)
 
+<p><b>Spreadsheet reset for new month, clearing out old data</b></p>
+
+![Gif of spreadsheet resetting for new month](reset.gif)
+
+
 
 <p><b>Sheets For Reference</b></p>
   <p>The Google Spreadsheets used for testing:<br>
   <a href="https://docs.google.com/spreadsheets/d/1oBXPYKTmSMF_yq6YRhqE5N80OLWGAXwCFT0RRcJNk28/edit#gid=0">
   test1 food waste log</a><br>
-  <a href "https://docs.google.com/spreadsheets/d/1M9qNOIab-WGT0FcifnXJDd6FCSdSnzgWndhGxytsfAc/edit#gid=0">
+  <a href="https://docs.google.com/spreadsheets/d/1M9qNOIab-WGT0FcifnXJDd6FCSdSnzgWndhGxytsfAc/edit#gid=0">
   test2 food waste log</a></p>
