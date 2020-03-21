@@ -5,10 +5,10 @@
   Spreadsheets for the next month with data cells cleared out.</p>
 
 <p>Spreadsheet filled out</p>
-![Image of spreadsheet filled out with data](screenshots-gifs/sheet.png)<br>
+![Image of spreadsheet filled out with data](sheet.png)<br>
 <p>Files created with raw data and calculations</p>
-![Image of spreadsheet filled out with data](screenshots-gifs/raw-data.png)<br>
-![Image of spreadsheet filled out with data](screenshots-gifs/calcs.png)<br>
+![Image of spreadsheet filled out with data](raw-data.png)<br>
+![Image of spreadsheet filled out with data](calcs.png)<br>
 
 
 <p><b>Sheets For Reference</b></p>
