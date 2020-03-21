@@ -8,9 +8,11 @@
 
 ![Image of spreadsheet filled out with data](sheet.png)
 
-<!-- <p><b>Files created with raw data and calculations</b></p>
+<p><b>Files created with raw data and calculations</b></p>
+
 ![Image of text file with raw data from spreadsheet](raw-data.png)
-![Image of text file with calculations from spreadsheet](calcs.png) -->
+
+![Image of text file with calculations from spreadsheet](calcs.png)
 
 
 <p><b>Sheets For Reference</b></p>
