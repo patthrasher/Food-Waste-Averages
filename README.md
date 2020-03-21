@@ -26,8 +26,7 @@
 
 
 <br>
-<p><b>Sheets For Reference</b></p>
-  <p>The Google Spreadsheets used for testing:<br>
+<p><b>Test Sheets For Reference</b></p>
   <a href="https://docs.google.com/spreadsheets/d/1oBXPYKTmSMF_yq6YRhqE5N80OLWGAXwCFT0RRcJNk28/edit#gid=0">
   test1 food waste log</a><br>
   <a href="https://docs.google.com/spreadsheets/d/1M9qNOIab-WGT0FcifnXJDd6FCSdSnzgWndhGxytsfAc/edit#gid=0">
