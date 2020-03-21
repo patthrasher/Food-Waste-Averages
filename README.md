@@ -4,11 +4,11 @@
   created with the raw data and calculations for the month. The application then resets the Google
   Spreadsheets for the next month with data cells cleared out.</p>
 
-<p><b>Spreadsheet filled out</b></p>
-![Image of spreadsheet filled out with data](sheet.png)<br>
-<p><b>Files created with raw data and calculations</b></p>
-![Image of text file with raw data from spreadsheet](raw-data.png)<br>
-![Image of text file with calculations from spreadsheet](calcs.png)<br>
+<!-- <p><b>Spreadsheet filled out</b></p> -->
+![Image of spreadsheet filled out with data](sheet.png)
+<!-- <p><b>Files created with raw data and calculations</b></p> -->
+<!-- ![Image of text file with raw data from spreadsheet](raw-data.png)<br>
+![Image of text file with calculations from spreadsheet](calcs.png)<br> -->
 
 
 <p><b>Sheets For Reference</b></p>
