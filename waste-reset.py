@@ -5,15 +5,14 @@ from oauth2client.service_account import ServiceAccountCredentials
 import time
 import calendar
 from calendar import monthrange
+import datetime
+from datetime import date
 
 scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
 creds = ServiceAccountCredentials.from_json_keyfile_name('client_secret.json', scope)
 client = gspread.authorize(creds)
 
 # gets the month number
-import datetime
-from datetime import date
-
 today = datetime.date.today()
 str_today = str(today)
 month = str_today[5:7]
