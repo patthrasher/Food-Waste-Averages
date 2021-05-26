@@ -8,4 +8,3 @@
   <a href="https://docs.google.com/spreadsheets/d/1M9qNOIab-WGT0FcifnXJDd6FCSdSnzgWndhGxytsfAc/edit#gid=0">
   test2 food waste log</a></p>
 
-<p><a href="https://patrickthrasher.com/developer-portfolio/">Portfolio</a></p>
