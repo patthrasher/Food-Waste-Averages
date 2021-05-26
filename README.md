@@ -1,8 +1,6 @@
 <p><b>Description</b></p>
-  <p>A Python application to track food waste and dial in ordering for restaurants. It uses the Google
-  Sheets API and runs calculations to get averages for each day’s leftover food items. Files are
-  created with the raw data and calculations for the month. The application then resets the Google
-  Spreadsheets for the next month and data cells are cleared out.</p>
+  <p>A Python application I developed to help me track food waste and adjust ordering in my management role at a coffee shop. It uses the Google Sheets API and runs calculations to get averages for each day’s leftover food items. Files are created with the raw data and calculations for the month. The application then resets the Google Spreadsheets for the next month and data cells are cleared out.
+  Pre-pandemic we were using this software at two of our store locations. Currently I am working on a web version. </p>
 
 <p><b>Test sheets for reference</b></p>
   <a href="https://docs.google.com/spreadsheets/d/1oBXPYKTmSMF_yq6YRhqE5N80OLWGAXwCFT0RRcJNk28/edit#gid=0">
